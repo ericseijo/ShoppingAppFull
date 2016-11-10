@@ -1,0 +1,11 @@
+<div class="jumbotron">
+  <h1>Your Shopping App</h1>
+
+  <% unless current_user.present? %>
+    <%= render '/devise/sessions/login_form' %>
+  <% else %>
+    <h2><%= link_to 'Dashboard', user_dashboard_path %></h2>
+  <% end %> 
+  
+    
+</div>

@@ -1,0 +1,13 @@
+<div class="col-sm-3 col-md-2 sidebar">
+  <ul class="nav nav-sidebar">
+    <li class="<%= active_class_for(user_dashboard_path) %>">
+      <%= link_to 'Overview', user_dashboard_path %>
+      </li>
+    <li class="<%= active_class_for(products_path) %>">
+      <%= link_to 'Products', products_path %>
+    </li>
+    <li>
+      <%= link_to 'Shopping Lists', '#' %>
+    </li>
+  </ul>
+</div>
