@@ -8,4 +8,10 @@
   </div>
   
 
-<h2 class="page-header">Recent Shopping Lists</h2>
+  <h2 class="page-header">Recent Shopping Lists</h2>
+
+  <%= render 'shopping_lists/list_table' %>
+
+  <div class="text-right">
+    <h4><%= link_to 'View All', shopping_lists_path %></h4>  
+  </div>

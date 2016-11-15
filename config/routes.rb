@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'dashboard', to: 'user_dashboard#index', as: 'user_dashboard'
 
   resources :products
+  resources :shopping_lists
   
   devise_for :users, controllers: {
     sessions: 'users/sessions',

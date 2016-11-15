@@ -13,7 +13,8 @@ class User < ApplicationRecord
   #has_many :grocery_lists
   #has_many :groceries, through: :grocery_lists, dependent: :destroy
   
-  has_many :products
+  has_many :products, dependent: :destroy
+  has_many :shopping_lists, dependent: :destroy
   
   def full_name
     [first_name, last_name].join(' ')

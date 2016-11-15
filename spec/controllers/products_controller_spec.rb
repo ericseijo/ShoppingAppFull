@@ -22,7 +22,6 @@ RSpec.describe ProductsController, type: :controller do
   before do
     sign_in user
     @product = user.products.create! valid_attributes
-    #user.products << @product
     @products = user.products
   end
 

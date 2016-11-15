@@ -4,7 +4,7 @@ class UserDashboardController < ApplicationController
   layout 'dashboard'
   
   def index
-    #@groceries = Grocery.all
     @products = current_user.products
+    @shopping_lists = current_user.shopping_lists
   end
 end

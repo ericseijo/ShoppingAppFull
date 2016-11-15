@@ -17,6 +17,8 @@ RSpec.describe "when in the dashboard", type: :feature do
   
   it "should link to lists" do
     expect(page).to have_link('Shopping Lists')
+    click_link('Shopping Lists')
+    expect(current_path).to eq shopping_lists_path
   end
   
   it "should list the last 5 product items" do
